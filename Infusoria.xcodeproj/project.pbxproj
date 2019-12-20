@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E86317223ACECCE00E51C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317123ACECCE00E51C77 /* AppDelegate.swift */; };
+		2E86317423ACECCE00E51C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317323ACECCE00E51C77 /* ContentView.swift */; };
+		2E86317723ACECCE00E51C77 /* Infusoria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317523ACECCE00E51C77 /* Infusoria.xcdatamodeld */; };
+		2E86317923ACECD100E51C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E86317823ACECD100E51C77 /* Assets.xcassets */; };
+		2E86317C23ACECD100E51C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E86317B23ACECD100E51C77 /* Preview Assets.xcassets */; };
+		2E86317F23ACECD100E51C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E86317D23ACECD100E51C77 /* Main.storyboard */; };
+		2E86318B23ACECD100E51C77 /* InfusoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86318A23ACECD100E51C77 /* InfusoriaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E86318723ACECD100E51C77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E86316623ACECCD00E51C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E86316D23ACECCD00E51C77;
+			remoteInfo = Infusoria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E86316E23ACECCE00E51C77 /* Infusoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infusoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E86317123ACECCE00E51C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E86317323ACECCE00E51C77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2E86317623ACECCE00E51C77 /* Infusoria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Infusoria.xcdatamodel; sourceTree = "<group>"; };
+		2E86317823ACECD100E51C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E86317B23ACECD100E51C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E86317E23ACECD100E51C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E86318023ACECD100E51C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E86318123ACECD100E51C77 /* Infusoria.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Infusoria.entitlements; sourceTree = "<group>"; };
+		2E86318623ACECD100E51C77 /* InfusoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfusoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E86318A23ACECD100E51C77 /* InfusoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfusoriaTests.swift; sourceTree = "<group>"; };
+		2E86318C23ACECD100E51C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E86316B23ACECCD00E51C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E86318323ACECD100E51C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E86316523ACECCD00E51C77 = {
+			isa = PBXGroup;
+			children = (
+				2E86317023ACECCE00E51C77 /* Infusoria */,
+				2E86318923ACECD100E51C77 /* InfusoriaTests */,
+				2E86316F23ACECCE00E51C77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E86316F23ACECCE00E51C77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E86316E23ACECCE00E51C77 /* Infusoria.app */,
+				2E86318623ACECD100E51C77 /* InfusoriaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E86317023ACECCE00E51C77 /* Infusoria */ = {
+			isa = PBXGroup;
+			children = (
+				2E86317123ACECCE00E51C77 /* AppDelegate.swift */,
+				2E86317323ACECCE00E51C77 /* ContentView.swift */,
+				2E86317823ACECD100E51C77 /* Assets.xcassets */,
+				2E86317D23ACECD100E51C77 /* Main.storyboard */,
+				2E86318023ACECD100E51C77 /* Info.plist */,
+				2E86318123ACECD100E51C77 /* Infusoria.entitlements */,
+				2E86317523ACECCE00E51C77 /* Infusoria.xcdatamodeld */,
+				2E86317A23ACECD100E51C77 /* Preview Content */,
+			);
+			path = Infusoria;
+			sourceTree = "<group>";
+		};
+		2E86317A23ACECD100E51C77 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2E86317B23ACECD100E51C77 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E86318923ACECD100E51C77 /* InfusoriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E86318A23ACECD100E51C77 /* InfusoriaTests.swift */,
+				2E86318C23ACECD100E51C77 /* Info.plist */,
+			);
+			path = InfusoriaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E86316D23ACECCD00E51C77 /* Infusoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E86318F23ACECD100E51C77 /* Build configuration list for PBXNativeTarget "Infusoria" */;
+			buildPhases = (
+				2E86316A23ACECCD00E51C77 /* Sources */,
+				2E86316B23ACECCD00E51C77 /* Frameworks */,
+				2E86316C23ACECCD00E51C77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Infusoria;
+			productName = Infusoria;
+			productReference = 2E86316E23ACECCE00E51C77 /* Infusoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E86318523ACECD100E51C77 /* InfusoriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E86319223ACECD100E51C77 /* Build configuration list for PBXNativeTarget "InfusoriaTests" */;
+			buildPhases = (
+				2E86318223ACECD100E51C77 /* Sources */,
+				2E86318323ACECD100E51C77 /* Frameworks */,
+				2E86318423ACECD100E51C77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E86318823ACECD100E51C77 /* PBXTargetDependency */,
+			);
+			name = InfusoriaTests;
+			productName = InfusoriaTests;
+			productReference = 2E86318623ACECD100E51C77 /* InfusoriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E86316623ACECCD00E51C77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Kirill Olenyov";
+				TargetAttributes = {
+					2E86316D23ACECCD00E51C77 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					2E86318523ACECD100E51C77 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2E86316D23ACECCD00E51C77;
+					};
+				};
+			};
+			buildConfigurationList = 2E86316923ACECCD00E51C77 /* Build configuration list for PBXProject "Infusoria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E86316523ACECCD00E51C77;
+			productRefGroup = 2E86316F23ACECCE00E51C77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E86316D23ACECCD00E51C77 /* Infusoria */,
+				2E86318523ACECD100E51C77 /* InfusoriaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E86316C23ACECCD00E51C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E86317F23ACECD100E51C77 /* Main.storyboard in Resources */,
+				2E86317C23ACECD100E51C77 /* Preview Assets.xcassets in Resources */,
+				2E86317923ACECD100E51C77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E86318423ACECD100E51C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E86316A23ACECCD00E51C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E86317423ACECCE00E51C77 /* ContentView.swift in Sources */,
+				2E86317223ACECCE00E51C77 /* AppDelegate.swift in Sources */,
+				2E86317723ACECCE00E51C77 /* Infusoria.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E86318223ACECD100E51C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E86318B23ACECD100E51C77 /* InfusoriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E86318823ACECD100E51C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E86316D23ACECCD00E51C77 /* Infusoria */;
+			targetProxy = 2E86318723ACECD100E51C77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E86317D23ACECD100E51C77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E86317E23ACECD100E51C77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E86318D23ACECD100E51C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E86318E23ACECD100E51C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2E86319023ACECD100E51C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Infusoria/Infusoria.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Infusoria/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Infusoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = kolenyov.Infusoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2E86319123ACECD100E51C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Infusoria/Infusoria.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Infusoria/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Infusoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = kolenyov.Infusoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2E86319323ACECD100E51C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InfusoriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = kolenyov.InfusoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infusoria.app/Contents/MacOS/Infusoria";
+			};
+			name = Debug;
+		};
+		2E86319423ACECD100E51C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InfusoriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = kolenyov.InfusoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infusoria.app/Contents/MacOS/Infusoria";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E86316923ACECCD00E51C77 /* Build configuration list for PBXProject "Infusoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E86318D23ACECD100E51C77 /* Debug */,
+				2E86318E23ACECD100E51C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E86318F23ACECD100E51C77 /* Build configuration list for PBXNativeTarget "Infusoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E86319023ACECD100E51C77 /* Debug */,
+				2E86319123ACECD100E51C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E86319223ACECD100E51C77 /* Build configuration list for PBXNativeTarget "InfusoriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E86319323ACECD100E51C77 /* Debug */,
+				2E86319423ACECD100E51C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E86317523ACECCE00E51C77 /* Infusoria.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E86317623ACECCE00E51C77 /* Infusoria.xcdatamodel */,
+			);
+			currentVersion = 2E86317623ACECCE00E51C77 /* Infusoria.xcdatamodel */;
+			path = Infusoria.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E86316623ACECCD00E51C77 /* Project object */;
+}
