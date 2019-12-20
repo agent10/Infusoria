@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		216D0460E796D551CCA6FDAC /* Pods_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B2CF4DBFBDA4EC7D4324A4 /* Pods_Widget.framework */; };
 		2E86317223ACECCE00E51C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317123ACECCE00E51C77 /* AppDelegate.swift */; };
 		2E86317423ACECCE00E51C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317323ACECCE00E51C77 /* ContentView.swift */; };
 		2E86317723ACECCE00E51C77 /* Infusoria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317523ACECCE00E51C77 /* Infusoria.xcdatamodeld */; };
@@ -14,6 +15,19 @@
 		2E86317C23ACECD100E51C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E86317B23ACECD100E51C77 /* Preview Assets.xcassets */; };
 		2E86317F23ACECD100E51C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E86317D23ACECD100E51C77 /* Main.storyboard */; };
 		2E86318B23ACECD100E51C77 /* InfusoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86318A23ACECD100E51C77 /* InfusoriaTests.swift */; };
+		2E86319623ACF0AF00E51C77 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86319523ACF0AF00E51C77 /* NewsItem.swift */; };
+		2E86319823ACF13D00E51C77 /* NewsItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86319723ACF13D00E51C77 /* NewsItemRow.swift */; };
+		2E86319A23ACF24E00E51C77 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E86319923ACF24E00E51C77 /* data.json */; };
+		2E86319E23AD06BC00E51C77 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86319D23AD06BC00E51C77 /* NewsListView.swift */; };
+		2E8631A623AD093E00E51C77 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8631A523AD093E00E51C77 /* NotificationCenter.framework */; };
+		2E8631A923AD093E00E51C77 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8631A823AD093E00E51C77 /* TodayViewController.swift */; };
+		2E8631AB23AD093E00E51C77 /* ListRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8631AA23AD093E00E51C77 /* ListRowViewController.swift */; };
+		2E8631AE23AD093E00E51C77 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8631AC23AD093E00E51C77 /* TodayViewController.xib */; };
+		2E8631B123AD093E00E51C77 /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8631AF23AD093E00E51C77 /* ListRowViewController.xib */; };
+		2E8631B523AD093E00E51C77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E8631B323AD093E00E51C77 /* InfoPlist.strings */; };
+		2E8631B923AD093E00E51C77 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E8631A323AD093E00E51C77 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		41121F50476600138769B31B /* Pods_Infusoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9658506DE938265DA2280C /* Pods_Infusoria.framework */; };
+		64FD60680A84E10230F39BD2 /* Pods_InfusoriaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB1CFB388E23406BFE9E1F5 /* Pods_InfusoriaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +38,31 @@
 			remoteGlobalIDString = 2E86316D23ACECCD00E51C77;
 			remoteInfo = Infusoria;
 		};
+		2E8631B723AD093E00E51C77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E86316623ACECCD00E51C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8631A223AD093E00E51C77;
+			remoteInfo = Widget;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2E8631BD23AD093E00E51C77 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E8631B923AD093E00E51C77 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1DA67EC16429230ED0033A07 /* Pods-Infusoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infusoria.debug.xcconfig"; path = "Target Support Files/Pods-Infusoria/Pods-Infusoria.debug.xcconfig"; sourceTree = "<group>"; };
 		2E86316E23ACECCE00E51C77 /* Infusoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infusoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86317123ACECCE00E51C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E86317323ACECCE00E51C77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +75,27 @@
 		2E86318623ACECD100E51C77 /* InfusoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfusoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86318A23ACECD100E51C77 /* InfusoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfusoriaTests.swift; sourceTree = "<group>"; };
 		2E86318C23ACECD100E51C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E86319523ACF0AF00E51C77 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		2E86319723ACF13D00E51C77 /* NewsItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemRow.swift; sourceTree = "<group>"; };
+		2E86319923ACF24E00E51C77 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		2E86319D23AD06BC00E51C77 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		2E8631A323AD093E00E51C77 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8631A523AD093E00E51C77 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2E8631A823AD093E00E51C77 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2E8631AA23AD093E00E51C77 /* ListRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowViewController.swift; sourceTree = "<group>"; };
+		2E8631AD23AD093E00E51C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		2E8631B023AD093E00E51C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListRowViewController.xib; sourceTree = "<group>"; };
+		2E8631B223AD093E00E51C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8631B423AD093E00E51C77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E8631B623AD093E00E51C77 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		78B2CF4DBFBDA4EC7D4324A4 /* Pods_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB1CFB388E23406BFE9E1F5 /* Pods_InfusoriaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfusoriaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA2EE72A2FA8D8A5D23EADF /* Pods-InfusoriaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfusoriaTests.release.xcconfig"; path = "Target Support Files/Pods-InfusoriaTests/Pods-InfusoriaTests.release.xcconfig"; sourceTree = "<group>"; };
+		82EE0A42C97BBE2860B64AC0 /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug.xcconfig"; path = "Target Support Files/Pods-Widget/Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		B5E3C68D89CA995EA9F3F38A /* Pods-InfusoriaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfusoriaTests.debug.xcconfig"; path = "Target Support Files/Pods-InfusoriaTests/Pods-InfusoriaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD8C2838C12D68F9B5A4D375 /* Pods-Infusoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infusoria.release.xcconfig"; path = "Target Support Files/Pods-Infusoria/Pods-Infusoria.release.xcconfig"; sourceTree = "<group>"; };
+		EF9658506DE938265DA2280C /* Pods_Infusoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infusoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A979002A92A2F666899C91 /* Pods-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.release.xcconfig"; path = "Target Support Files/Pods-Widget/Pods-Widget.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41121F50476600138769B31B /* Pods_Infusoria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +111,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FD60680A84E10230F39BD2 /* Pods_InfusoriaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8631A023AD093E00E51C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8631A623AD093E00E51C77 /* NotificationCenter.framework in Frameworks */,
+				216D0460E796D551CCA6FDAC /* Pods_Widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +132,10 @@
 			children = (
 				2E86317023ACECCE00E51C77 /* Infusoria */,
 				2E86318923ACECD100E51C77 /* InfusoriaTests */,
+				2E8631A723AD093E00E51C77 /* Widget */,
+				2E8631A423AD093E00E51C77 /* Frameworks */,
 				2E86316F23ACECCE00E51C77 /* Products */,
+				568752878CBF83D23E8E8A51 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +144,7 @@
 			children = (
 				2E86316E23ACECCE00E51C77 /* Infusoria.app */,
 				2E86318623ACECD100E51C77 /* InfusoriaTests.xctest */,
+				2E8631A323AD093E00E51C77 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +160,10 @@
 				2E86318123ACECD100E51C77 /* Infusoria.entitlements */,
 				2E86317523ACECCE00E51C77 /* Infusoria.xcdatamodeld */,
 				2E86317A23ACECD100E51C77 /* Preview Content */,
+				2E86319523ACF0AF00E51C77 /* NewsItem.swift */,
+				2E86319723ACF13D00E51C77 /* NewsItemRow.swift */,
+				2E86319923ACF24E00E51C77 /* data.json */,
+				2E86319D23AD06BC00E51C77 /* NewsListView.swift */,
 			);
 			path = Infusoria;
 			sourceTree = "<group>";
@@ -109,6 +185,45 @@
 			path = InfusoriaTests;
 			sourceTree = "<group>";
 		};
+		2E8631A423AD093E00E51C77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E8631A523AD093E00E51C77 /* NotificationCenter.framework */,
+				EF9658506DE938265DA2280C /* Pods_Infusoria.framework */,
+				7BB1CFB388E23406BFE9E1F5 /* Pods_InfusoriaTests.framework */,
+				78B2CF4DBFBDA4EC7D4324A4 /* Pods_Widget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E8631A723AD093E00E51C77 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				2E8631A823AD093E00E51C77 /* TodayViewController.swift */,
+				2E8631AA23AD093E00E51C77 /* ListRowViewController.swift */,
+				2E8631AC23AD093E00E51C77 /* TodayViewController.xib */,
+				2E8631AF23AD093E00E51C77 /* ListRowViewController.xib */,
+				2E8631B223AD093E00E51C77 /* Info.plist */,
+				2E8631B323AD093E00E51C77 /* InfoPlist.strings */,
+				2E8631B623AD093E00E51C77 /* Widget.entitlements */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		568752878CBF83D23E8E8A51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DA67EC16429230ED0033A07 /* Pods-Infusoria.debug.xcconfig */,
+				DD8C2838C12D68F9B5A4D375 /* Pods-Infusoria.release.xcconfig */,
+				B5E3C68D89CA995EA9F3F38A /* Pods-InfusoriaTests.debug.xcconfig */,
+				7DA2EE72A2FA8D8A5D23EADF /* Pods-InfusoriaTests.release.xcconfig */,
+				82EE0A42C97BBE2860B64AC0 /* Pods-Widget.debug.xcconfig */,
+				F8A979002A92A2F666899C91 /* Pods-Widget.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,13 +231,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E86318F23ACECD100E51C77 /* Build configuration list for PBXNativeTarget "Infusoria" */;
 			buildPhases = (
+				8168FCE10B2594DF18AE2623 /* [CP] Check Pods Manifest.lock */,
 				2E86316A23ACECCD00E51C77 /* Sources */,
 				2E86316B23ACECCD00E51C77 /* Frameworks */,
 				2E86316C23ACECCD00E51C77 /* Resources */,
+				2E8631BD23AD093E00E51C77 /* Embed App Extensions */,
+				A4483F4D0FFD63CC5A8C5300 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E8631B823AD093E00E51C77 /* PBXTargetDependency */,
 			);
 			name = Infusoria;
 			productName = Infusoria;
@@ -133,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E86319223ACECD100E51C77 /* Build configuration list for PBXNativeTarget "InfusoriaTests" */;
 			buildPhases = (
+				9194FC9F307E36A178DA17BB /* [CP] Check Pods Manifest.lock */,
 				2E86318223ACECD100E51C77 /* Sources */,
 				2E86318323ACECD100E51C77 /* Frameworks */,
 				2E86318423ACECD100E51C77 /* Resources */,
@@ -146,6 +266,24 @@
 			productName = InfusoriaTests;
 			productReference = 2E86318623ACECD100E51C77 /* InfusoriaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E8631A223AD093E00E51C77 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8631BA23AD093E00E51C77 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				03053B4BAE75EF6D38F7404D /* [CP] Check Pods Manifest.lock */,
+				2E86319F23AD093E00E51C77 /* Sources */,
+				2E8631A023AD093E00E51C77 /* Frameworks */,
+				2E8631A123AD093E00E51C77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 2E8631A323AD093E00E51C77 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -164,6 +302,9 @@
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = 2E86316D23ACECCD00E51C77;
 					};
+					2E8631A223AD093E00E51C77 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 				};
 			};
 			buildConfigurationList = 2E86316923ACECCD00E51C77 /* Build configuration list for PBXProject "Infusoria" */;
@@ -181,6 +322,7 @@
 			targets = (
 				2E86316D23ACECCD00E51C77 /* Infusoria */,
 				2E86318523ACECD100E51C77 /* InfusoriaTests */,
+				2E8631A223AD093E00E51C77 /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +335,7 @@
 				2E86317F23ACECD100E51C77 /* Main.storyboard in Resources */,
 				2E86317C23ACECD100E51C77 /* Preview Assets.xcassets in Resources */,
 				2E86317923ACECD100E51C77 /* Assets.xcassets in Resources */,
+				2E86319A23ACF24E00E51C77 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +346,103 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E8631A123AD093E00E51C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8631AE23AD093E00E51C77 /* TodayViewController.xib in Resources */,
+				2E8631B523AD093E00E51C77 /* InfoPlist.strings in Resources */,
+				2E8631B123AD093E00E51C77 /* ListRowViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03053B4BAE75EF6D38F7404D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Widget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8168FCE10B2594DF18AE2623 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infusoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9194FC9F307E36A178DA17BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfusoriaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4483F4D0FFD63CC5A8C5300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Infusoria/Pods-Infusoria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Infusoria/Pods-Infusoria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Infusoria/Pods-Infusoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E86316A23ACECCD00E51C77 /* Sources */ = {
@@ -211,7 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E86317423ACECCE00E51C77 /* ContentView.swift in Sources */,
+				2E86319E23AD06BC00E51C77 /* NewsListView.swift in Sources */,
+				2E86319623ACF0AF00E51C77 /* NewsItem.swift in Sources */,
 				2E86317223ACECCE00E51C77 /* AppDelegate.swift in Sources */,
+				2E86319823ACF13D00E51C77 /* NewsItemRow.swift in Sources */,
 				2E86317723ACECCE00E51C77 /* Infusoria.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +466,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E86319F23AD093E00E51C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8631A923AD093E00E51C77 /* TodayViewController.swift in Sources */,
+				2E8631AB23AD093E00E51C77 /* ListRowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -231,6 +482,11 @@
 			isa = PBXTargetDependency;
 			target = 2E86316D23ACECCD00E51C77 /* Infusoria */;
 			targetProxy = 2E86318723ACECD100E51C77 /* PBXContainerItemProxy */;
+		};
+		2E8631B823AD093E00E51C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E8631A223AD093E00E51C77 /* Widget */;
+			targetProxy = 2E8631B723AD093E00E51C77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -241,6 +497,30 @@
 				2E86317E23ACECD100E51C77 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E8631AC23AD093E00E51C77 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E8631AD23AD093E00E51C77 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		2E8631AF23AD093E00E51C77 /* ListRowViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E8631B023AD093E00E51C77 /* Base */,
+			);
+			name = ListRowViewController.xib;
+			sourceTree = "<group>";
+		};
+		2E8631B323AD093E00E51C77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E8631B423AD093E00E51C77 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -361,7 +641,9 @@
 		};
 		2E86319023ACECD100E51C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA67EC16429230ED0033A07 /* Pods-Infusoria.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Infusoria/Infusoria.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,7 +664,9 @@
 		};
 		2E86319123ACECD100E51C77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD8C2838C12D68F9B5A4D375 /* Pods-Infusoria.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Infusoria/Infusoria.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,6 +687,7 @@
 		};
 		2E86319323ACECD100E51C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E3C68D89CA995EA9F3F38A /* Pods-InfusoriaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -424,6 +709,7 @@
 		};
 		2E86319423ACECD100E51C77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA2EE72A2FA8D8A5D23EADF /* Pods-InfusoriaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -440,6 +726,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infusoria.app/Contents/MacOS/Infusoria";
+			};
+			name = Release;
+		};
+		2E8631BB23AD093E00E51C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82EE0A42C97BBE2860B64AC0 /* Pods-Widget.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kolenyov.Infusoria.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2E8631BC23AD093E00E51C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A979002A92A2F666899C91 /* Pods-Widget.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kolenyov.Infusoria.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -469,6 +795,15 @@
 			buildConfigurations = (
 				2E86319323ACECD100E51C77 /* Debug */,
 				2E86319423ACECD100E51C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E8631BA23AD093E00E51C77 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8631BB23AD093E00E51C77 /* Debug */,
+				2E8631BC23AD093E00E51C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
