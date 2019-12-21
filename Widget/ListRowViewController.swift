@@ -8,28 +8,37 @@
 
 import Cocoa
 import FeedKit
+import SwiftUI
 
-class ListRowViewController: NSViewController {
+class ListRowViewController: NSHostingController<SwiftUIView> {
     
-    @IBOutlet weak var ttItem: NSTextField!
-    
-    override var nibName: NSNib.Name? {
-        return NSNib.Name("ListRowViewController")
+    public init() {
+        super.init(rootView: SwiftUIView())
     }
     
-    override func loadView() {
-        super.loadView()
-        ttItem.addGestureRecognizer(NSClickGestureRecognizer(target: self, action: #selector(ListRowViewController.itemClick)))
+    override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
+        super.init(rootView: SwiftUIView())
     }
     
-    override func viewDidAppear() {
-        let feedItem = representedObject as! RSSFeedItem
-        ttItem.stringValue = feedItem.title ?? ""
+    @objc required dynamic init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func itemClick() {
-        let feedItem = representedObject as! RSSFeedItem
-        NSWorkspace.shared.open(URL(string: feedItem.link!)!)
-    }
+//    @IBOutlet weak var ttItem: NSTextField!
+    
+//    override func loadView() {
+//        super.loadView()
+//        ttItem.addGestureRecognizer(NSClickGestureRecognizer(target: self, action: #selector(ListRowViewController.itemClick)))
+//    }
+    
+//    override func viewDidAppear() {
+//        let feedItem = representedObject as! RSSFeedItem
+//        ttItem.stringValue = feedItem.title ?? ""
+//    }
+//
+//    @objc func itemClick() {
+//        let feedItem = representedObject as! RSSFeedItem
+//        NSWorkspace.shared.open(URL(string: feedItem.link!)!)
+//    }
     
 }

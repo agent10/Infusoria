@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		216D0460E796D551CCA6FDAC /* Pods_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B2CF4DBFBDA4EC7D4324A4 /* Pods_Widget.framework */; };
+		2E03C29323AD9A1600456DBF /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03C29223AD9A1600456DBF /* SwiftUIView.swift */; };
 		2E86317223ACECCE00E51C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317123ACECCE00E51C77 /* AppDelegate.swift */; };
 		2E86317423ACECCE00E51C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317323ACECCE00E51C77 /* ContentView.swift */; };
 		2E86317723ACECCE00E51C77 /* Infusoria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E86317523ACECCE00E51C77 /* Infusoria.xcdatamodeld */; };
@@ -23,7 +24,6 @@
 		2E8631A923AD093E00E51C77 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8631A823AD093E00E51C77 /* TodayViewController.swift */; };
 		2E8631AB23AD093E00E51C77 /* ListRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8631AA23AD093E00E51C77 /* ListRowViewController.swift */; };
 		2E8631AE23AD093E00E51C77 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8631AC23AD093E00E51C77 /* TodayViewController.xib */; };
-		2E8631B123AD093E00E51C77 /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8631AF23AD093E00E51C77 /* ListRowViewController.xib */; };
 		2E8631B523AD093E00E51C77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E8631B323AD093E00E51C77 /* InfoPlist.strings */; };
 		2E8631B923AD093E00E51C77 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E8631A323AD093E00E51C77 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		41121F50476600138769B31B /* Pods_Infusoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9658506DE938265DA2280C /* Pods_Infusoria.framework */; };
@@ -63,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		1DA67EC16429230ED0033A07 /* Pods-Infusoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infusoria.debug.xcconfig"; path = "Target Support Files/Pods-Infusoria/Pods-Infusoria.debug.xcconfig"; sourceTree = "<group>"; };
+		2E03C29223AD9A1600456DBF /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		2E86316E23ACECCE00E51C77 /* Infusoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infusoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86317123ACECCE00E51C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E86317323ACECCE00E51C77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		2E8631A823AD093E00E51C77 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		2E8631AA23AD093E00E51C77 /* ListRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowViewController.swift; sourceTree = "<group>"; };
 		2E8631AD23AD093E00E51C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
-		2E8631B023AD093E00E51C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListRowViewController.xib; sourceTree = "<group>"; };
 		2E8631B223AD093E00E51C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8631B423AD093E00E51C77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E8631B623AD093E00E51C77 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
@@ -202,10 +202,10 @@
 				2E8631A823AD093E00E51C77 /* TodayViewController.swift */,
 				2E8631AA23AD093E00E51C77 /* ListRowViewController.swift */,
 				2E8631AC23AD093E00E51C77 /* TodayViewController.xib */,
-				2E8631AF23AD093E00E51C77 /* ListRowViewController.xib */,
 				2E8631B223AD093E00E51C77 /* Info.plist */,
 				2E8631B323AD093E00E51C77 /* InfoPlist.strings */,
 				2E8631B623AD093E00E51C77 /* Widget.entitlements */,
+				2E03C29223AD9A1600456DBF /* SwiftUIView.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -220,7 +220,6 @@
 				82EE0A42C97BBE2860B64AC0 /* Pods-Widget.debug.xcconfig */,
 				F8A979002A92A2F666899C91 /* Pods-Widget.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -352,7 +351,6 @@
 			files = (
 				2E8631AE23AD093E00E51C77 /* TodayViewController.xib in Resources */,
 				2E8631B523AD093E00E51C77 /* InfoPlist.strings in Resources */,
-				2E8631B123AD093E00E51C77 /* ListRowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +470,7 @@
 			files = (
 				2E8631A923AD093E00E51C77 /* TodayViewController.swift in Sources */,
 				2E8631AB23AD093E00E51C77 /* ListRowViewController.swift in Sources */,
+				2E03C29323AD9A1600456DBF /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,14 +504,6 @@
 				2E8631AD23AD093E00E51C77 /* Base */,
 			);
 			name = TodayViewController.xib;
-			sourceTree = "<group>";
-		};
-		2E8631AF23AD093E00E51C77 /* ListRowViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E8631B023AD093E00E51C77 /* Base */,
-			);
-			name = ListRowViewController.xib;
 			sourceTree = "<group>";
 		};
 		2E8631B323AD093E00E51C77 /* InfoPlist.strings */ = {

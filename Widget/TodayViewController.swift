@@ -9,6 +9,7 @@
 import Cocoa
 import NotificationCenter
 import FeedKit
+import SwiftUI
 //import AlamofireRSSParser
 
 class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListViewDelegate, NCWidgetSearchViewDelegate {
