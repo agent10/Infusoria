@@ -9,56 +9,57 @@
 import Cocoa
 import NotificationCenter
 import FeedKit
+import SwiftUI
 //import AlamofireRSSParser
 
-class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListViewDelegate, NCWidgetSearchViewDelegate {
+extension Date
+{
+    func toString( dateFormat format  : String ) -> String
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+    
+}
 
-    @IBOutlet var listViewController: NCWidgetListViewController!
-    var searchController: NCWidgetSearchViewController?
+class TodayViewController: NSViewController, NCWidgetProviding {
     
-    // MARK: - NSViewController
-    
-    override var nibName: NSNib.Name? {
-        return NSNib.Name("TodayViewController")
+    override func loadView() {
+        self.view = NSView()
+        self.view.frame = CGRect(x: 0, y: 0, width: 300, height: 150)
+        
+        preferredContentSize = CGSize(width: 300, height: 150)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let data = NewsData()
+        let a = NSHostingController(rootView: SwiftUIView().environmentObject(data))
+        addChild(a)
+        a.view.frame = CGRect(x: 0, y: 0, width: 300, height: 150)
+        view.addSubview(a.view)
+        
+        
         let str = "https://news.yandex.ru/index.rss"
         let encodedStr = str.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let url = URL(string: encodedStr!)
-            let parser = FeedParser(URL: url!)
-                    parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
-                                DispatchQueue.main.async {
-                                    var arr = [RSSFeedItem]()
-                                    try? result.get().rssFeed?.items?.forEach({ (RSSFeedItem) in
-                                        arr.append(RSSFeedItem)
-                                        })
-                                    self.listViewController.contents = arr
-                                }
-                            }
+        let parser = FeedParser(URL: url!)
+        parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
+            DispatchQueue.main.async {
+                data.newsData.removeAll()
+                try? result.get().rssFeed?.items?.forEach({ (RSSFeedItem) in
+                    data.newsData.append(Feed(title: RSSFeedItem.title ?? "", date: RSSFeedItem.pubDate?.toString(dateFormat: "dd:MM") ?? "",link:RSSFeedItem.link ?? ""))
+                })
+            }
+        }
         
     }
     
     override func dismiss(_ viewController: NSViewController) {
         super.dismiss(viewController)
         
-        // The search controller has been dismissed and is no longer needed.
-        if viewController == self.searchController {
-            self.searchController = nil
-        }
     }
-    
-    //        let parser = FeedParser(URL: feedURL!)
-    //        parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
-    //            DispatchQueue.main.async {
-    //                var arr = [String]()
-    //                try? result.get().rssFeed?.items?.forEach({ (RSSFeedItem) in
-    //                    arr.append("1")
-    //                    })
-    //                self.listViewController.contents = arr
-    //            }
-    //        }
     
     // MARK: - NCWidgetProviding
     
@@ -74,8 +75,7 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     func widgetMarginInsets(forProposedMarginInsets defaultMarginInset: NSEdgeInsets) -> NSEdgeInsets {
         // Override the left margin so that the list view is flush with the edge.
         var newInsets = defaultMarginInset
-        newInsets.left = 0
-        return newInsets
+        return defaultMarginInset
     }
     
     var widgetAllowsEditing: Bool {
@@ -84,78 +84,17 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
         return true
     }
     
-    var minimumVisibleRowCount : Int {
-        return 10
-    }
-    
-    
     func widgetDidBeginEditing() {
         // The user has clicked the edit button.
         // Put the list view into editing mode.
-        self.listViewController.editing = true
+        //        self.listViewController.editing = true
     }
     
     func widgetDidEndEditing() {
         // The user has clicked the Done button, begun editing another widget,
         // or the Notification Center has been closed.
         // Take the list view out of editing mode.
-        self.listViewController.editing = false
+        //        self.listViewController.editing = false
     }
     
-    // MARK: - NCWidgetListViewDelegate
-    
-    func widgetList(_ list: NCWidgetListViewController, viewControllerForRow row: Int) -> NSViewController {
-        // Return a new view controller subclass for displaying an item of widget
-        // content. The NCWidgetListViewController will set the representedObject
-        // of this view controller to one of the objects in its contents array.
-        return ListRowViewController()
-    }
-    
-    func widgetListPerformAddAction(_ list: NCWidgetListViewController) {
-        // The user has clicked the add button in the list view.
-        // Display a search controller for adding new content to the widget.
-        let searchController = NCWidgetSearchViewController()
-        self.searchController = searchController
-        searchController.delegate = self
-        
-        // Present the search view controller with an animation.
-        // Implement dismissViewController to observe when the view controller
-        // has been dismissed and is no longer needed.
-        self.present(inWidget: searchController)
-    }
-    
-    func widgetList(_ list: NCWidgetListViewController, shouldReorderRow row: Int) -> Bool {
-        // Return true to allow the item to be reordered in the list by the user.
-        return true
-    }
-    
-    func widgetList(_ list: NCWidgetListViewController, didReorderRow row: Int, toRow newIndex: Int) {
-        // The user has reordered an item in the list.
-    }
-    
-    func widgetList(_ list: NCWidgetListViewController, shouldRemoveRow row: Int) -> Bool {
-        // Return true to allow the item to be removed from the list by the user.
-        return true
-    }
-    
-    func widgetList(_ list: NCWidgetListViewController, didRemoveRow row: Int) {
-        // The user has removed an item from the list.
-    }
-    
-    // MARK: - NCWidgetSearchViewDelegate
-    
-    func widgetSearch(_ searchController: NCWidgetSearchViewController, searchForTerm searchTerm: String, maxResults max: Int) {
-        // The user has entered a search term. Set the controller's searchResults property to the matching items.
-        searchController.searchResults = []
-    }
-    
-    func widgetSearchTermCleared(_ searchController: NCWidgetSearchViewController) {
-        // The user has cleared the search field. Remove the search results.
-        searchController.searchResults = nil
-    }
-    
-    func widgetSearch(_ searchController: NCWidgetSearchViewController, resultSelected object: Any) {
-        // The user has selected a search result from the list.
-    }
-
 }
